@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 379197043}
   - component: {fileID: 379197042}
   - component: {fileID: 379197041}
-  - component: {fileID: 379197040}
+  - component: {fileID: 379197045}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Untagged
@@ -143,22 +143,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &379197040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 379197039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dcc766dde8145b49833143ece74ef56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myRigidBody: {fileID: 379197041}
-  collision: {fileID: 379197042}
-  moveSpeed: 2
-  jumpHeight: 0
 --- !u!50 &379197041
 Rigidbody2D:
   serializedVersion: 4
@@ -273,6 +257,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &379197045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379197039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1761a9f6be851d4098b1b99e57b9f34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myRigidBody: {fileID: 379197041}
+  collision: {fileID: 379197042}
+  moveSpeed: 2
+  jumpHeight: 10
 --- !u!1 &1118664875
 GameObject:
   m_ObjectHideFlags: 0
