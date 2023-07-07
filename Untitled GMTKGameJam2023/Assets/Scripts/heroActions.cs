@@ -9,7 +9,9 @@ public class heroActions : MonoBehaviour
     public float moveSpeed = 2;
     public float jumpHeight;
     private bool grounded;
+    [SerializeField]
     private bool facingRight = true;
+    public LayerMask ground;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +20,7 @@ public class heroActions : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //Constantly moving forwards
         if(facingRight)
@@ -31,7 +33,10 @@ public class heroActions : MonoBehaviour
         }
 
         //Detecting if there's a pit
-        bool isFloor = Physics.Raycast(transform.position, transform.TransformDirection(new Vector3(1f,-1f)), 1f);
+        Debug.DrawLine(this.transform.position, new Vector3(this.transform.position.x+1, this.transform.position.y-1));
+        Debug.DrawLine(transform.position, transform.position + (new Vector3(1f, -1f)), Color.red);
+        bool isFloor = Physics2D.Raycast(transform.position, transform.position + (new Vector3(1f,-1f)), 5f, ground);
+        Debug.Log(isFloor.ToString());
         if(!isFloor)
         {
             facingRight = false;
