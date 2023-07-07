@@ -7,16 +7,9 @@ public class heroActions : MonoBehaviour
     public Rigidbody2D myRigidBody;
     public BoxCollider2D collision;
     public float moveSpeed = 2;
-<<<<<<< Updated upstream:Untitled GMTKGameJam2023/Assets/Scripts/heroActions.cs
-    public float jumpHeight;
-    private bool grounded;
-    [SerializeField]
-=======
     public float jumpHeight = 10;
     private bool grounded = true;
->>>>>>> Stashed changes:Untitled GMTKGameJam2023/Assets/heroActions.cs
     private bool facingRight = true;
-    public LayerMask ground;
 
     // Start is called before the first frame update
     void Start()
@@ -38,14 +31,7 @@ public class heroActions : MonoBehaviour
         }
 
         //Detecting if there's a pit
-<<<<<<< Updated upstream:Untitled GMTKGameJam2023/Assets/Scripts/heroActions.cs
-        Debug.DrawLine(this.transform.position, new Vector3(this.transform.position.x+1, this.transform.position.y-1));
-        Debug.DrawLine(transform.position, transform.position + (new Vector3(1f, -1f)), Color.red);
-        bool isFloor = Physics2D.Raycast(transform.position, transform.position + (new Vector3(1f,-1f)), 5f, ground);
-        Debug.Log(isFloor.ToString());
-=======
         bool isFloor = Physics2D.Raycast(transform.position + Vector3.right, Vector2.down, 10f);
->>>>>>> Stashed changes:Untitled GMTKGameJam2023/Assets/heroActions.cs
         if(!isFloor)
         {
             myRigidBody.velocity += new Vector2(0,jumpHeight);
