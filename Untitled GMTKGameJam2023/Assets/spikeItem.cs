@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class crumbleBlockScript : MonoBehaviour
+public class spikeItem : MonoBehaviour
 {
-    public BoxCollider2D boxCollider;
-    public Animator animator;
     public int iD;
     private dragAndDropManager dragAndDropMgr;
     void Start()
@@ -20,26 +18,5 @@ public class crumbleBlockScript : MonoBehaviour
             dragAndDropMgr.allItems[iD].quantity++;
             dragAndDropMgr.allItems[iD].quantityText.text = dragAndDropMgr.allItems[iD].quantity.ToString();
         }
-    }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if(collision.gameObject.tag == "Player")
-        {
-            crumble();
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            crumble();
-        }
-    }
-
-    private void crumble()
-    {
-        boxCollider.enabled = false;
-        animator.SetBool("crumble", true);
     }
 }
