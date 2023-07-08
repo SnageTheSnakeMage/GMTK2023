@@ -57,3 +57,4 @@ MonoBehaviour:
   - {fileID: 5852942721417261877, guid: b117700fba73fda4593445000c457b70, type: 3}
   - {fileID: 95385008647483742, guid: ce4d1af533ec66843a9253968f6e9386, type: 3}
   currentItemID: 0
+  placeable: 1
