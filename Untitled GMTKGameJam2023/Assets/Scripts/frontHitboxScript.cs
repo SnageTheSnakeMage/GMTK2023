@@ -8,6 +8,9 @@ public class frontHitboxScript : MonoBehaviour
     public heroActions heroActions;
     public BoxCollider2D frontHitbox;
 
+    //used for death method
+    public Transform respawnPosition;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +32,7 @@ public class frontHitboxScript : MonoBehaviour
                 turnAround();
                 break;
             case "Danger":
-                heroActions.die();
+                die();
                 break;
         }
     }
@@ -49,5 +52,11 @@ public class frontHitboxScript : MonoBehaviour
             frontHitbox.offset = new Vector2(0.68f, 0);
             heroActions.sprite.flipX = true;
         }
+    }
+    //moved die method here to access turnAround
+    public void die()
+    {
+        hero.transform.position = respawnPosition.position;
+        turnAround();   
     }
 }
