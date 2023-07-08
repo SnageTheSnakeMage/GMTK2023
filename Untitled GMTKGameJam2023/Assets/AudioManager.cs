@@ -13,7 +13,7 @@ public class AudioManager : MonoBehaviour
 
 	void Awake()
 	{
-		if (instance != null)
+        /*if (instance != null)
 		{
 			Destroy(gameObject);
 		}
@@ -21,9 +21,10 @@ public class AudioManager : MonoBehaviour
 		{
 			instance = this;
 			DontDestroyOnLoad(gameObject);
-		}
+		}*/
 
-		foreach (Sound s in sounds)
+
+        foreach (Sound s in sounds)
 		{
 			s.source = gameObject.AddComponent<AudioSource>();
 			s.source.clip = s.clip;
@@ -32,8 +33,11 @@ public class AudioManager : MonoBehaviour
 			s.source.outputAudioMixerGroup = mixerGroup;
 		}
 	}
+    private void Start()
+    {
 
-	public void Play(string sound)
+    }
+    public void Play(string sound)
 	{
 		Sound s = Array.Find(sounds, item => item.name == sound);
 		if (s == null)

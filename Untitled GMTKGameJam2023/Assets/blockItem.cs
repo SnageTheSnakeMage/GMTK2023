@@ -18,6 +18,7 @@ public class blockItem : MonoBehaviour
             Destroy(this.gameObject);
             dragAndDropMgr.allItems[iD].quantity++;
             dragAndDropMgr.allItems[iD].quantityText.text = dragAndDropMgr.allItems[iD].quantity.ToString();
+            FindObjectOfType<AudioManager>().Play("Remove");
         }
     }
 
