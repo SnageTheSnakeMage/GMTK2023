@@ -9,7 +9,6 @@ public class itemController : MonoBehaviour
     public int quantity;
     public TextMeshProUGUI quantityText;
     public bool selected = false;
-
     public dragAndDropManager dragAndDropMgr;
     void Start()
     {
@@ -27,6 +26,7 @@ public class itemController : MonoBehaviour
             Instantiate(dragAndDropMgr.itemPreviewImage[iD], new Vector3(worldPosition.x, worldPosition.y, 0), Quaternion.identity);
             quantity--;
             quantityText.text = quantity.ToString();
+            dragAndDropMgr.currentItemID = iD;
         }
     }
 }

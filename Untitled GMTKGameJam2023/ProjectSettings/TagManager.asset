@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Ground
   - Danger
+  - dragAndDropManager
+  - Preview
+  - id0
+  - id1
+  - id2
   layers:
   - Default
   - TransparentFX
