@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class dragAndDropManager : MonoBehaviour
 {
-    //This script sets up a central manager for all placeable items
     public itemController[] allItems;
     public GameObject[] itemPrefabs;
     public GameObject[] itemPreviewImage;
@@ -12,7 +11,6 @@ public class dragAndDropManager : MonoBehaviour
 
     void Update()
     {
-        //gets position of the cursor and gives it a point in world space
         Vector2 screenPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
         Vector2 worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
 
