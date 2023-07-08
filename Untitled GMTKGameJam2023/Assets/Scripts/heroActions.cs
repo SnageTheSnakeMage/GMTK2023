@@ -25,20 +25,41 @@ public class heroActions : MonoBehaviour
         //Constantly moving forwards and checking for pits
         if (facingRight)
         {
-            myRigidBody.velocity = new Vector2(moveSpeed, myRigidBody.velocity.y);
+            if (grounded)
+            {
+                myRigidBody.velocity = new Vector2(moveSpeed, myRigidBody.velocity.y);
+            }
             isFloor = Physics2D.Raycast(transform.position + Vector3.right, Vector2.down, 10f);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position + new Vector3(2,0), Vector2.down, 10f);
+            if (hit)
+            {
+                if (hit.transform.gameObject.tag == "Danger" && grounded)
+                {
+                    jump();
+                }
+            }
         }
         else
         {
-            myRigidBody.velocity = new Vector2(-moveSpeed, myRigidBody.velocity.y);
+            if (grounded)
+            {
+                myRigidBody.velocity = new Vector2(-moveSpeed, myRigidBody.velocity.y);
+            }
             isFloor = Physics2D.Raycast(transform.position + Vector3.left, Vector2.down, 10f);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position + new Vector3(-2, 0), Vector2.down, 10f);
+            if (hit)
+            {
+                if (hit.transform.gameObject.tag == "Danger" && grounded)
+                {
+                    jump();
+                }
+            }
         }
 
         //If there's a gap in the ground and the hero is grounded, jump
         if (!isFloor && grounded)
         {
-            myRigidBody.velocity += new Vector2(0, jumpHeight);
-            grounded = false;
+            jump();
         }
     }
 
@@ -56,6 +77,11 @@ public class heroActions : MonoBehaviour
         }
     }
 
+    public void jump()
+    {
+        myRigidBody.velocity += new Vector2((myRigidBody.velocity.x/Mathf.Abs(myRigidBody.velocity.x)), jumpHeight);
+        grounded = false;
+    }
 
     //Death animation and respawn
     public void die()
