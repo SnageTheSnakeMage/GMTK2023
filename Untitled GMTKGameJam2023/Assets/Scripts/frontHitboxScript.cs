@@ -39,12 +39,12 @@ public class frontHitboxScript : MonoBehaviour
         if (heroActions.facingRight)
         {
             heroActions.facingRight = false;
-            frontHitbox.offset = new Vector2(-1,0);
+            frontHitbox.offset = new Vector2(-0.68f,0);
         }
         else
         {
             heroActions.facingRight = true;
-            frontHitbox.offset = new Vector2(1, 0);
+            frontHitbox.offset = new Vector2(0.68f, 0);
         }
     }
 }

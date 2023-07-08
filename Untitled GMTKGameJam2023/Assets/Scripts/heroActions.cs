@@ -7,7 +7,7 @@ public class heroActions : MonoBehaviour
     public BoxCollider2D bodyHit;
     public float moveSpeed = 2;
     public float jumpHeight = 10;
-    private bool grounded = true;
+    public bool grounded = true;
     public bool facingRight = true;
     public float lookDownBy = 5f;
 
