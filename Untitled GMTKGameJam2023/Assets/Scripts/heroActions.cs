@@ -9,6 +9,7 @@ public class heroActions : MonoBehaviour
     public float jumpHeight = 10;
     private bool grounded = true;
     public bool facingRight = true;
+    public float lookDownBy = 5f;
 
     // Start is called before the first frame update
     void Start()
@@ -29,8 +30,8 @@ public class heroActions : MonoBehaviour
             {
                 myRigidBody.velocity = new Vector2(moveSpeed, myRigidBody.velocity.y);
             }
-            isFloor = Physics2D.Raycast(transform.position + Vector3.right, Vector2.down, 10f);
-            RaycastHit2D hit = Physics2D.Raycast(transform.position + new Vector3(2,0), Vector2.down, 10f);
+            isFloor = Physics2D.Raycast(transform.position + Vector3.right, Vector2.down, lookDownBy);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position + new Vector3(2,0), Vector2.down, lookDownBy);
             if (hit)
             {
                 if (hit.transform.gameObject.tag == "Danger" && grounded)
@@ -45,8 +46,8 @@ public class heroActions : MonoBehaviour
             {
                 myRigidBody.velocity = new Vector2(-moveSpeed, myRigidBody.velocity.y);
             }
-            isFloor = Physics2D.Raycast(transform.position + Vector3.left, Vector2.down, 10f);
-            RaycastHit2D hit = Physics2D.Raycast(transform.position + new Vector3(-2, 0), Vector2.down, 10f);
+            isFloor = Physics2D.Raycast(transform.position + Vector3.left, Vector2.down, lookDownBy);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position + new Vector3(-2, 0), Vector2.down, lookDownBy);
             if (hit)
             {
                 if (hit.transform.gameObject.tag == "Danger" && grounded)
