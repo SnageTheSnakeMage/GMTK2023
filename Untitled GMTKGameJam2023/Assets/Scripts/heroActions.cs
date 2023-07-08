@@ -12,6 +12,11 @@ public class heroActions : MonoBehaviour
     public bool facingRight = true;
     public float lookDownBy = 5f;
 
+
+    //used for death method
+    public frontHitboxScript frontHitbox;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -74,7 +79,7 @@ public class heroActions : MonoBehaviour
                 grounded = true;
                 break;
             case "Danger":
-                die();
+                frontHitbox.die();
                 break;
         }
     }
@@ -86,8 +91,5 @@ public class heroActions : MonoBehaviour
     }
 
     //Death animation and respawn
-    public void die()
-    {
-
-    }
+ 
 }

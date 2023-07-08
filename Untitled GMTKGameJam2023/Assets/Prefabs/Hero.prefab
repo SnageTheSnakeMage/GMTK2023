@@ -74,6 +74,7 @@ MonoBehaviour:
   hero: {fileID: 7711978562171844074}
   heroActions: {fileID: 7711978562171844080}
   frontHitbox: {fileID: 7711978561629165869}
+  respawnPosition: {fileID: 0}
 --- !u!1 &7711978562171844074
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,6 +231,7 @@ MonoBehaviour:
   grounded: 1
   facingRight: 1
   lookDownBy: 5
+  frontHitbox: {fileID: 7711978561629165868}
 --- !u!95 &4305983441729644445
 Animator:
   serializedVersion: 5
