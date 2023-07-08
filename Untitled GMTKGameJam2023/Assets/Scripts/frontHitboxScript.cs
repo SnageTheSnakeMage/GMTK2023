@@ -56,7 +56,11 @@ public class frontHitboxScript : MonoBehaviour
     //moved die method here to access turnAround
     public void die()
     {
+        if (!heroActions.facingRight)
+        {
+            turnAround();
+        }
         hero.transform.position = respawnPosition.position;
-        turnAround();   
+           
     }
 }
