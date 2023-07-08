@@ -4,7 +4,7 @@ using UnityEngine;
 public class heroActions : MonoBehaviour
 {
     public Rigidbody2D myRigidBody;
-    public BoxCollider2D collision;
+    public BoxCollider2D bodyHit;
     public float moveSpeed = 2;
     public float jumpHeight = 10;
     private bool grounded = true;
@@ -13,7 +13,7 @@ public class heroActions : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
     // Update is called once per frame
     void FixedUpdate()
@@ -26,6 +26,7 @@ public class heroActions : MonoBehaviour
         {
             myRigidBody.velocity = new Vector2(moveSpeed, myRigidBody.velocity.y);
             isFloor = Physics2D.Raycast(transform.position + Vector3.right, Vector2.down, 10f);
+            Debug.DrawRay(transform.position + Vector3.right, Vector2.down*10,Color.black);
         }
         else
         {
@@ -39,37 +40,19 @@ public class heroActions : MonoBehaviour
             myRigidBody.velocity += new Vector2(0, jumpHeight);
             grounded = false;
         }
-
-
     }
 
     //Checks what object the hero hits when he collides with something
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        switch(collision.gameObject.tag)
+        switch (collision.gameObject.tag)
         {
             case "Ground":
                 grounded = true;
                 break;
-            case "Wall":
-                turnAround();
-                break;
             case "Danger":
                 die();
                 break;
-        }
-    }
-
-    //Turns the hero around
-    private void turnAround()
-    {
-        if(facingRight)
-        {
-            facingRight = false;
-        }
-        else
-        {
-            facingRight = true;
         }
     }
 
