@@ -20,7 +20,7 @@ public class frontHitboxScript : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         switch (collision.gameObject.tag)
         {
@@ -28,7 +28,7 @@ public class frontHitboxScript : MonoBehaviour
                 turnAround();
                 break;
             case "Danger":
-                
+                heroActions.die();
                 break;
         }
     }
@@ -39,10 +39,12 @@ public class frontHitboxScript : MonoBehaviour
         if (heroActions.facingRight)
         {
             heroActions.facingRight = false;
+            frontHitbox.offset = new Vector2(-1,0);
         }
         else
         {
             heroActions.facingRight = true;
+            frontHitbox.offset = new Vector2(1, 0);
         }
     }
 }
