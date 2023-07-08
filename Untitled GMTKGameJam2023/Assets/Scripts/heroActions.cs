@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class heroActions : MonoBehaviour
 {
+    public SpriteRenderer sprite;
     public Rigidbody2D myRigidBody;
     public BoxCollider2D bodyHit;
     public float moveSpeed = 2;

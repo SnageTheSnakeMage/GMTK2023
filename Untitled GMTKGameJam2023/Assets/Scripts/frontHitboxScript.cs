@@ -12,6 +12,7 @@ public class frontHitboxScript : MonoBehaviour
     void Start()
     {
         heroActions = hero.GetComponent<heroActions>();
+        heroActions.sprite.flipX = true;
     }
 
     // Update is called once per frame
@@ -40,11 +41,13 @@ public class frontHitboxScript : MonoBehaviour
         {
             heroActions.facingRight = false;
             frontHitbox.offset = new Vector2(-0.68f,0);
+            heroActions.sprite.flipX = false;
         }
         else
         {
             heroActions.facingRight = true;
             frontHitbox.offset = new Vector2(0.68f, 0);
+            heroActions.sprite.flipX = true;
         }
     }
 }
