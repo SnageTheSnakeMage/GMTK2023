@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
+using TMPro;
 
-public class mainMenu : MonoBehaviour
+public class settingsMenu : MonoBehaviour
 {
     public GameObject sceneChanger;
     public sceneChangerScript changer;
+    public AudioMixer music;
+    public AudioMixer sfx;
+
 
     // Start is called before the first frame update
     void Start()
@@ -15,13 +19,18 @@ public class mainMenu : MonoBehaviour
         changer = sceneChanger.GetComponent<sceneChangerScript>();
     }
 
-    public void levelSelect()
+    public void musicAudio (float volume)
     {
-        changer.LoadScene("levelSelect");
+        music.SetFloat("volume", volume);
     }
 
-    public void quitGame()
+    public void sfxAudio(float volume)
     {
-        Application.Quit();
+        sfx.SetFloat("volume", volume);
+    }
+
+    public void backButton()
+    {
+        changer.PreviousScene();
     }
 }
