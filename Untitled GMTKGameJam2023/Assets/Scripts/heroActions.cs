@@ -13,8 +13,9 @@ public class heroActions : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
+
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -26,7 +27,6 @@ public class heroActions : MonoBehaviour
         {
             myRigidBody.velocity = new Vector2(moveSpeed, myRigidBody.velocity.y);
             isFloor = Physics2D.Raycast(transform.position + Vector3.right, Vector2.down, 10f);
-            Debug.DrawRay(transform.position + Vector3.right, Vector2.down*10,Color.black);
         }
         else
         {
@@ -55,6 +55,7 @@ public class heroActions : MonoBehaviour
                 break;
         }
     }
+
 
     //Death animation and respawn
     public void die()

@@ -9,23 +9,34 @@ public class itemController : MonoBehaviour
     public int quantity;
     public TextMeshProUGUI quantityText;
     public bool selected = false;
-    private dragAndDropManager dragAndDropMgr;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
+    public dragAndDropManager dragAndDropMgr;
     void Start()
     {
         quantityText.text = quantity.ToString();
         dragAndDropMgr = GameObject.FindGameObjectWithTag("dragAndDropManager").GetComponent<dragAndDropManager>();
     }
 
-    void BlockSelected()
+    public void BlockSelected()
+<<<<<<< Updated upstream
     {
         if(quantity > 0) {
             Vector2 screenPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
             Vector2 worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
+=======
+    { 
+        if(quantity > 0) 
+        {
+            //Vector2 screenPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+            //Vector2 worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
+>>>>>>> Stashed changes
             selected = true;
-            Instantiate(dragAndDropMgr.itemPreviewImage[iD], new Vector3(worldPosition.x, worldPosition.y, 0), Quaternion.identity);
+            //Instantiate(dragAndDropMgr.itemPreviewImage[iD], new Vector3(worldPosition.x, worldPosition.y, 0), Quaternion.identity);
             quantity--;
             quantityText.text = quantity.ToString();
         }
     }
-
 }
