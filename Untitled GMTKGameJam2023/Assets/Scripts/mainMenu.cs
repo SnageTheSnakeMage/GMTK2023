@@ -20,6 +20,11 @@ public class mainMenu : MonoBehaviour
         changer.LoadScene("levelSelect");
     }
 
+    public void settings()
+    {
+        changer.LoadScene("Settings");
+    }
+
     public void quitGame()
     {
         Application.Quit();

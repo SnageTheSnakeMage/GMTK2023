@@ -11,6 +11,7 @@ public class sceneChangerScript : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);  //Allow this object to persist between scene changes
+        sceneHistory.Add("Main Menu");
     }
 
     //Call this whenever you want to load a new scene

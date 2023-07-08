@@ -11,6 +11,7 @@ TagManager:
   - id0
   - id1
   - id2
+  - SceneChanger
   layers:
   - Default
   - TransparentFX
