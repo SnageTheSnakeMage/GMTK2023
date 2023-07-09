@@ -5,6 +5,7 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
+    public GameObject dialogueBox;
     public TMP_Text nameText;
     public TMP_Text dialogueText;
 
@@ -44,6 +45,6 @@ public class DialogueManager : MonoBehaviour
 
     public void endDialogue()
     {
-
+        Object.Destroy(dialogueBox);
     }
 }
