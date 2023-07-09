@@ -127,7 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpforce: 0
   heroRb: {fileID: 0}
-  iD: 0
+  iD: 3
 --- !u!82 &4091875794786970153
 AudioSource:
   m_ObjectHideFlags: 0
