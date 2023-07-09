@@ -924,7 +924,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1297442762}
         m_TargetAssemblyTypeName: settingsMenu, Assembly-CSharp
         m_MethodName: sfxAudio
-        m_Mode: 0
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1155,8 +1155,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00fbdc94132a8b246a2c1f994aa099f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneChanger: {fileID: 0}
-  changer: {fileID: 0}
   music: {fileID: 24100000, guid: f8ce39c289a1ace45a68ce71d299e450, type: 2}
   sfx: {fileID: 24100000, guid: eb79603862efca440abe68c995553e08, type: 2}
 --- !u!1 &1497229291
@@ -1694,7 +1692,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1297442762}
         m_TargetAssemblyTypeName: settingsMenu, Assembly-CSharp
         m_MethodName: musicAudio
-        m_Mode: 0
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

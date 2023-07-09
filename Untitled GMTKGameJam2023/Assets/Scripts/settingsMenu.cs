@@ -6,8 +6,8 @@ using TMPro;
 
 public class settingsMenu : MonoBehaviour
 {
-    public GameObject sceneChanger;
-    public sceneChangerScript changer;
+    private GameObject sceneChanger;
+    private sceneChangerScript changer;
     public AudioMixer music;
     public AudioMixer sfx;
 
