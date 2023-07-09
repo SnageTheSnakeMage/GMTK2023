@@ -1,11 +1,13 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class audioPlayer : MonoBehaviour
+public class levelNumber : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        FindObjectOfType<AudioManager>().Play("Main Menu");
+        
     }
 
     // Update is called once per frame

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+//Problem
 public class sceneChangerScript : MonoBehaviour
 {
     private List<string> sceneHistory = new List<string>();  //running history of scenes//The last string in the list is always the current scene running

@@ -868,6 +868,10 @@ PrefabInstance:
       propertyPath: goalScreen
       value: 
       objectReference: {fileID: 182112729}
+    - target: {fileID: 1186300837893347781, guid: 2e36d7a53f3da994b90c8834d7c118e2, type: 3}
+      propertyPath: levelNumber
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1186300837893347782, guid: 2e36d7a53f3da994b90c8834d7c118e2, type: 3}
       propertyPath: m_RootOrder
       value: 1

@@ -308,16 +308,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1709804408}
-        m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
-        m_MethodName: selectLevel
-        m_Mode: 3
+      - m_Target: {fileID: 1130430049}
+        m_TargetAssemblyTypeName: sceneswap, Assembly-CSharp
+        m_MethodName: Sceneswap
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 8
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: level8
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &82243581
@@ -577,10 +577,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1709804408}
-        m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
-        m_MethodName: backToMenu
-        m_Mode: 1
+      - m_Target: {fileID: 1130430049}
+        m_TargetAssemblyTypeName: sceneswap, Assembly-CSharp
+        m_MethodName: Sceneswap
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -711,16 +711,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1709804408}
-        m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
-        m_MethodName: selectLevel
-        m_Mode: 3
+      - m_Target: {fileID: 1130430049}
+        m_TargetAssemblyTypeName: sceneswap, Assembly-CSharp
+        m_MethodName: Sceneswap
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 3
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: level3
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &344053147
@@ -913,16 +913,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1709804408}
-        m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
-        m_MethodName: selectLevel
-        m_Mode: 3
+      - m_Target: {fileID: 1130430049}
+        m_TargetAssemblyTypeName: sceneswap, Assembly-CSharp
+        m_MethodName: Sceneswap
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 5
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: level5
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &423296522
@@ -1161,16 +1161,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1709804408}
-        m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
-        m_MethodName: selectLevel
-        m_Mode: 3
+      - m_Target: {fileID: 1130430049}
+        m_TargetAssemblyTypeName: sceneswap, Assembly-CSharp
+        m_MethodName: Sceneswap
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: level1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1037702707
@@ -1815,16 +1815,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1709804408}
-        m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
-        m_MethodName: selectLevel
-        m_Mode: 3
+      - m_Target: {fileID: 1130430049}
+        m_TargetAssemblyTypeName: sceneswap, Assembly-CSharp
+        m_MethodName: Sceneswap
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: level2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1371766183
@@ -2354,16 +2354,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1709804408}
-        m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
-        m_MethodName: selectLevel
-        m_Mode: 3
+      - m_Target: {fileID: 1130430049}
+        m_TargetAssemblyTypeName: sceneswap, Assembly-CSharp
+        m_MethodName: Sceneswap
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 6
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: level6
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1636347061
@@ -2549,6 +2549,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1709804407}
   - component: {fileID: 1709804408}
+  - component: {fileID: 1709804409}
   m_Layer: 0
   m_Name: Settings Menu
   m_TagString: Untagged
@@ -2588,7 +2589,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1709804406}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69b4ae15f3f99b84ca17f838d0032601, type: 3}
   m_Name: 
@@ -2601,6 +2602,29 @@ MonoBehaviour:
   - {fileID: 423296521}
   - {fileID: 1636347060}
   - {fileID: 2066881574}
+  - {fileID: 82243580}
+--- !u!114 &1709804409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709804406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6258ceadd29c3e048818c886dfb53658, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Log: {fileID: 0}
+  allLevels:
+  - {fileID: 1037702706}
+  - {fileID: 1371766182}
+  - {fileID: 344053146}
+  - {fileID: 2131893376}
+  - {fileID: 423296521}
+  - {fileID: 1636347060}
+  - {fileID: 2066881574}
+  - {fileID: 82243580}
   - {fileID: 82243580}
 --- !u!1 &1713894791
 GameObject:
@@ -3032,16 +3056,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1709804408}
-        m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
-        m_MethodName: selectLevel
-        m_Mode: 3
+      - m_Target: {fileID: 1130430049}
+        m_TargetAssemblyTypeName: sceneswap, Assembly-CSharp
+        m_MethodName: Sceneswap
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 7
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: level7
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2066881575
@@ -3166,16 +3190,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1709804408}
-        m_TargetAssemblyTypeName: levelSelect, Assembly-CSharp
-        m_MethodName: selectLevel
-        m_Mode: 3
+      - m_Target: {fileID: 1130430049}
+        m_TargetAssemblyTypeName: sceneswap, Assembly-CSharp
+        m_MethodName: Sceneswap
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 4
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: level4
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2131893377

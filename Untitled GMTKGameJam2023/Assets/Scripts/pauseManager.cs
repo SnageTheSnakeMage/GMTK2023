@@ -15,10 +15,11 @@ public class pauseManager : MonoBehaviour
     }
     public void Resume()
     {
+        FindObjectOfType<AudioManager>().Stop("Main Theme");
         FindObjectOfType<AudioManager>().Play("Main Theme");
         ispaused = false;
         pausemenu.SetActive(false); 
-        Time.timeScale = 0;
+        Time.timeScale = 1;
         Debug.Log("Resumed Game");
     }
     private void Update()

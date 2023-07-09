@@ -7,17 +7,21 @@ public class goalScript : MonoBehaviour
 {
     private GameObject sceneChanger;
     private sceneChangerScript changer;
-    public int levelTotal = 3;
+    /*public int levelTotal = 3;
     public int menuOffset = 2;
-    public int nextScene;
+    public int nextScene;*/
     public GameObject goalScreen;
     int voicelineNumber;
 
+    public levelLog Log;
+    public int levelNumber;
+
     void Start()
     {
-        sceneChanger = GameObject.FindGameObjectWithTag("SceneChanger");
+        /*sceneChanger = GameObject.FindGameObjectWithTag("SceneChanger");
         changer = sceneChanger.GetComponent<sceneChangerScript>();
-        nextScene = SceneManager.GetActiveScene().buildIndex+1;
+        nextScene = SceneManager.GetActiveScene().buildIndex+1;*/
+        Log = FindAnyObjectByType<levelLog>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -27,7 +31,8 @@ public class goalScript : MonoBehaviour
         {
             Time.timeScale = 0;
             goalScreen.SetActive(true);
-            switch(voicelineNumber)
+            Log.completedLevels[levelNumber] = true;
+            switch (voicelineNumber)
             {
                 case 1:
                     FindObjectOfType<AudioManager>().Play("win1");
@@ -45,7 +50,8 @@ public class goalScript : MonoBehaviour
 
             }
 
-            if(SceneManager.GetActiveScene().buildIndex == menuOffset + levelTotal -1)
+            //Problem
+/*            if(SceneManager.GetActiveScene().buildIndex == menuOffset + levelTotal -1)
             {
                 
             }
@@ -56,7 +62,7 @@ public class goalScript : MonoBehaviour
                     PlayerPrefs.SetInt("levelAt", nextScene);
                 }
                 changer.LoadScene(nextScene);
-            }
+            }*/
         }
     }
 }
