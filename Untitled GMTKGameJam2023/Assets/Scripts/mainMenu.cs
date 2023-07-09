@@ -15,6 +15,18 @@ public class mainMenu : MonoBehaviour
         changer = sceneChanger.GetComponent<sceneChangerScript>();
     }
 
+    public void start()
+    {
+        if(PlayerPrefs.HasKey("levelAt"))
+        {
+            changer.LoadScene(PlayerPrefs.GetInt("levelAt"));
+        }
+        else
+        {
+            PlayerPrefs.SetInt("levelAt",3);
+            changer.LoadScene("level1");
+        }
+    }
     public void levelSelect()
     {
         changer.LoadScene("levelSelect");

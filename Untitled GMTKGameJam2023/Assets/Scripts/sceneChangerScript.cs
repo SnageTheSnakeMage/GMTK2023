@@ -26,8 +26,17 @@ public class sceneChangerScript : MonoBehaviour
     //It will add the new scene to the sceneHistory list
     public void LoadScene(int sceneIndex)
     {
-        sceneHistory.Add(SceneManager.GetSceneByBuildIndex(sceneIndex).name);
-        SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(sceneIndex));
+        sceneHistory.Add(NameFromIndex(sceneIndex));
+        SceneManager.LoadScene(NameFromIndex(sceneIndex));
+    }
+
+    private static string NameFromIndex(int BuildIndex)
+    {
+        string path = SceneUtility.GetScenePathByBuildIndex(BuildIndex);
+        int slash = path.LastIndexOf('/');
+        string name = path.Substring(slash + 1);
+        int dot = name.LastIndexOf('.');
+        return name.Substring(0, dot);
     }
 
     //Call this whenever you want to load the previous scene
