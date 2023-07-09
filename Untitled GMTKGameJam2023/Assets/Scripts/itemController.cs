@@ -15,7 +15,13 @@ public class itemController : MonoBehaviour
         quantityText.text = quantity.ToString();
         dragAndDropMgr = GameObject.FindGameObjectWithTag("dragAndDropManager").GetComponent<dragAndDropManager>();
     }
-
+    public void ChangedSelection()
+    {
+        if (dragAndDropMgr.currentItemID != iD)
+        {
+            Destroy(GameObject.FindGameObjectWithTag("Preview"));
+        }
+    }
     public void BlockSelected()
     {
         if(quantity > 0) 
@@ -27,4 +33,5 @@ public class itemController : MonoBehaviour
             selected = true;
         }
     }
+
 }
