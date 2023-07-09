@@ -114,5 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c2d623bd711a6c4aa5d109ed10d9db5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelTotal: 3
+  menuOffset: 3
+  nextScene: 0
   goalScreen: {fileID: 0}
-  Log: {fileID: 0}

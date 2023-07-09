@@ -43,7 +43,6 @@ public class heroActions : MonoBehaviour
             {
                 if (hit.transform.gameObject.tag == "Danger" && grounded)
                 {
-                    anim.SetBool("jumping?", true);
                     jump();
                 }
             }
@@ -53,7 +52,6 @@ public class heroActions : MonoBehaviour
             if (grounded)
             {
                 myRigidBody.velocity = new Vector2(-moveSpeed, myRigidBody.velocity.y);
-
             }
             isFloor = Physics2D.Raycast(transform.position + Vector3.left, Vector2.down, lookDownBy);
             RaycastHit2D hit = Physics2D.Raycast(transform.position + new Vector3(-2, 0), Vector2.down, lookDownBy);
@@ -61,7 +59,6 @@ public class heroActions : MonoBehaviour
             {
                 if (hit.transform.gameObject.tag == "Danger" && grounded)
                 {
-                    anim.SetBool("jumping?", true);
                     jump();
                 }
             }
@@ -70,12 +67,11 @@ public class heroActions : MonoBehaviour
         //If there's a gap in the ground and the hero is grounded, jump
         if (!isFloor && grounded)
         {
-            anim.SetBool("jumping?", true);
             jump();
         }
 
-        //jump anim check
-
+        //jump anime check
+        anim.SetBool("grounded?", grounded);
     }
 
     //Checks what object the hero hits when he collides with something
@@ -85,10 +81,8 @@ public class heroActions : MonoBehaviour
         {
             case "Ground":
                 grounded = true;
-                anim.SetBool("jumping?", false);
                 break;
             case "Danger":
-                anim.SetBool("jumping?", false);
                 frontHitbox.die();
                 break;
             
@@ -97,7 +91,6 @@ public class heroActions : MonoBehaviour
 
     public void jump()
     {
-
         myRigidBody.velocity += new Vector2((myRigidBody.velocity.x/Mathf.Abs(myRigidBody.velocity.x)), jumpHeight);
         grounded = false;
     }

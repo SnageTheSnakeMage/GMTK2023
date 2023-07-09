@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-//Problem
+
 public class mainMenu : MonoBehaviour
 {
     public GameObject sceneChanger;
