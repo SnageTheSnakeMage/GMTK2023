@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -19,9 +17,19 @@ public class dragAndDropManager : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0) && allItems[currentItemID].selected && placeable)
         {
-            allItems[currentItemID].selected = false;
+
             Instantiate(itemPrefabs[currentItemID], new Vector3(worldPosition.x, worldPosition.y),Quaternion.identity);
-            Destroy(GameObject.FindGameObjectWithTag("Preview"));
+            allItems[currentItemID].quantity--;
+            allItems[currentItemID].quantityText.text = allItems[currentItemID].quantity.ToString();
+            if (allItems[currentItemID].quantity <= 0)
+            {
+                allItems[currentItemID].selected = false;
+                Destroy(GameObject.FindGameObjectWithTag("Preview"));
+            }
+        }
+        if(Input.GetMouseButtonDown(0) && !placeable && !allItems[currentItemID].selected)
+        {
+            FindObjectOfType<AudioManager>().Play("Nope");
         }
     }
 }

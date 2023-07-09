@@ -14,7 +14,7 @@ public class previewItem : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if(Physics2D.OverlapBox(this.transform.position, new Vector2(1,1), 0))
+        if(Physics2D.OverlapBox(this.transform.position, new Vector2(.9f,0.9f), 0))
         {
             sprite.color = new Color(1, 0, 0, 0.3529412f);
             dragAndDropMgr.placeable = false;

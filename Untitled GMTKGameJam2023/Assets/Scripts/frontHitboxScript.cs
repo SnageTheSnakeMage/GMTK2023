@@ -56,9 +56,27 @@ public class frontHitboxScript : MonoBehaviour
     //moved die method here to access turnAround
     public void die()
     {
+        int voicelineNumber = Random.Range(1, 6);
         if (!heroActions.facingRight)
         {
             turnAround();
+        }
+        switch(voicelineNumber){
+            case 1:
+                FindObjectOfType<AudioManager>().Play("fail" + voicelineNumber.ToString());
+                break;
+            case 2:
+                FindObjectOfType<AudioManager>().Play("fail" + voicelineNumber.ToString());
+                break;
+            case 3:
+                FindObjectOfType<AudioManager>().Play("fail" + voicelineNumber.ToString());
+                break;
+            case 4:
+                FindObjectOfType<AudioManager>().Play("fail" + voicelineNumber.ToString());
+                break;
+            case 5:
+                FindObjectOfType<AudioManager>().Play("fail" + voicelineNumber.ToString());
+                break;
         }
         hero.transform.position = respawnPosition.position;
            
