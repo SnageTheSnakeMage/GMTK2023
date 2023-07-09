@@ -3675,7 +3675,7 @@ MonoBehaviour:
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: fail1
-    clip: {fileID: 8300000, guid: 3057b79ccfc19224d831e3236dd253a7, type: 3}
+    clip: {fileID: 8300000, guid: 7a67f5fd7ee54c64f8b76802c5572b97, type: 3}
     volume: 1
     volumeVariance: 0
     pitch: 1
@@ -3684,7 +3684,7 @@ MonoBehaviour:
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: fail2
-    clip: {fileID: 8300000, guid: 4cf60023613258c41be479e8fc949b75, type: 3}
+    clip: {fileID: 8300000, guid: 2553dc2d700bd264987a023d372c5935, type: 3}
     volume: 1
     volumeVariance: 0
     pitch: 1
@@ -3693,7 +3693,7 @@ MonoBehaviour:
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: fail3
-    clip: {fileID: 8300000, guid: aa0afb36f441570488d1c315776fd848, type: 3}
+    clip: {fileID: 8300000, guid: ce7c8d43499e1eb4d8d05f012fc47712, type: 3}
     volume: 1
     volumeVariance: 0
     pitch: 1
@@ -3702,7 +3702,7 @@ MonoBehaviour:
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: fail4
-    clip: {fileID: 8300000, guid: c1c194949a1e2ef41a1be18c74718cba, type: 3}
+    clip: {fileID: 8300000, guid: ce7c8d43499e1eb4d8d05f012fc47712, type: 3}
     volume: 1
     volumeVariance: 0
     pitch: 1
@@ -3711,7 +3711,7 @@ MonoBehaviour:
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: fail5
-    clip: {fileID: 8300000, guid: e6bc5f7b3ff70ba4090a068f26055de6, type: 3}
+    clip: {fileID: 8300000, guid: 2ada3d528c48a8d49a93acebdac2026b, type: 3}
     volume: 1
     volumeVariance: 0
     pitch: 1
