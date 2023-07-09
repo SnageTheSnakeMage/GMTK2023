@@ -18,7 +18,7 @@ public class pauseManager : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("Main Theme");
         ispaused = false;
         pausemenu.SetActive(false); 
-        Time.timeScale = 0;
+        Time.timeScale = 1;
         Debug.Log("Resumed Game");
     }
     private void Update()
