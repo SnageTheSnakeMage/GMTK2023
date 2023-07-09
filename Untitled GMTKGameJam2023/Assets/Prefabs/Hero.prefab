@@ -231,7 +231,6 @@ MonoBehaviour:
   grounded: 1
   facingRight: 1
   lookDownBy: 5
-  anim: {fileID: 4305983441729644445}
   frontHitbox: {fileID: 7711978561629165868}
 --- !u!95 &4305983441729644445
 Animator:
