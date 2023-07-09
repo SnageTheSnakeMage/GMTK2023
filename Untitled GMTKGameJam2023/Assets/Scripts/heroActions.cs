@@ -81,6 +81,7 @@ public class heroActions : MonoBehaviour
             case "Danger":
                 frontHitbox.die();
                 break;
+            
         }
     }
 

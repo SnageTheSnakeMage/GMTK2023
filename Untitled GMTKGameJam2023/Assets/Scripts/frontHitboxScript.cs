@@ -10,18 +10,12 @@ public class frontHitboxScript : MonoBehaviour
 
     //used for death method
     public Transform respawnPosition;
-
-    // Start is called before the first frame update
+    
     void Start()
     {
+        respawnPosition = GameObject.FindGameObjectWithTag("Respawn").transform;
         heroActions = hero.GetComponent<heroActions>();
         heroActions.sprite.flipX = true;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -81,4 +75,5 @@ public class frontHitboxScript : MonoBehaviour
         hero.transform.position = respawnPosition.position;
            
     }
+
 }
