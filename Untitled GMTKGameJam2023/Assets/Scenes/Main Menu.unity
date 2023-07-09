@@ -2519,5 +2519,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17b055ef01febb343b0d931b2bb9f318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   sceneChanger: {fileID: 0}
   changer: {fileID: 0}
+=======
+<<<<<<< HEAD
+--- !u!1001 &8759994461226560979
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8759994461750468485, guid: 11b01c415fafdcd488607bb50a31e3d5, type: 3}
+      propertyPath: m_Name
+      value: heroResetBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759994461750468491, guid: 11b01c415fafdcd488607bb50a31e3d5, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759994461750468491, guid: 11b01c415fafdcd488607bb50a31e3d5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759994461750468491, guid: 11b01c415fafdcd488607bb50a31e3d5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759994461750468491, guid: 11b01c415fafdcd488607bb50a31e3d5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759994461750468491, guid: 11b01c415fafdcd488607bb50a31e3d5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759994461750468491, guid: 11b01c415fafdcd488607bb50a31e3d5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759994461750468491, guid: 11b01c415fafdcd488607bb50a31e3d5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759994461750468491, guid: 11b01c415fafdcd488607bb50a31e3d5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759994461750468491, guid: 11b01c415fafdcd488607bb50a31e3d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759994461750468491, guid: 11b01c415fafdcd488607bb50a31e3d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759994461750468491, guid: 11b01c415fafdcd488607bb50a31e3d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 11b01c415fafdcd488607bb50a31e3d5, type: 3}
+=======
+  sceneChanger: {fileID: 0}
+  changer: {fileID: 0}
+>>>>>>> dac7ffb11751de615a45fbc8e3b46c36b667c270
+>>>>>>> Stashed changes
