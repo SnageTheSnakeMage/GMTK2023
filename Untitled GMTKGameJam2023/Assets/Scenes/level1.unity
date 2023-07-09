@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e8d3eb2c53ab7d4190970a48b409c31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 10
+  timer: 12
   hero: {fileID: 1130910311}
   dialogueBox1: {fileID: 1867500554}
   dialogueBox2: {fileID: 984994773}
