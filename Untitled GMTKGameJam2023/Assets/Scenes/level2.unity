@@ -1293,11 +1293,11 @@ PrefabInstance:
     - target: {fileID: 1536776820579875176, guid: 566bfdf8a8cb13f429e217bae9a1b69d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 589684555}
+      objectReference: {fileID: 589684554}
     - target: {fileID: 1536776820579875176, guid: 566bfdf8a8cb13f429e217bae9a1b69d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 589684554}
+      objectReference: {fileID: 589684555}
     - target: {fileID: 1536776820952921443, guid: 566bfdf8a8cb13f429e217bae9a1b69d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1389,19 +1389,23 @@ PrefabInstance:
     - target: {fileID: 1536776821142789589, guid: 566bfdf8a8cb13f429e217bae9a1b69d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 589684555}
+      objectReference: {fileID: 589684554}
     - target: {fileID: 1536776821142789589, guid: 566bfdf8a8cb13f429e217bae9a1b69d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 589684554}
+      objectReference: {fileID: 589684555}
+    - target: {fileID: 1536776821142789589, guid: 566bfdf8a8cb13f429e217bae9a1b69d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: level3
+      objectReference: {fileID: 0}
     - target: {fileID: 1536776821210291772, guid: 566bfdf8a8cb13f429e217bae9a1b69d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 589684555}
+      objectReference: {fileID: 589684554}
     - target: {fileID: 1536776821210291772, guid: 566bfdf8a8cb13f429e217bae9a1b69d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 589684554}
+      objectReference: {fileID: 589684555}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 566bfdf8a8cb13f429e217bae9a1b69d, type: 3}
 --- !u!1001 &838812425
