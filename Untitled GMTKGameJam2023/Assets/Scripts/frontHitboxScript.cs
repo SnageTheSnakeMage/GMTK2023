@@ -23,6 +23,7 @@ public class frontHitboxScript : MonoBehaviour
         switch (collision.gameObject.tag)
         {
             case "Ground":
+                Debug.Log("Hit Some Ground");
                 turnAround();
                 break;
             case "Danger":
@@ -34,6 +35,7 @@ public class frontHitboxScript : MonoBehaviour
     //Turns the hero around
     private void turnAround()
     {
+        Debug.Log("turned around");
         if (heroActions.facingRight)
         {
             heroActions.facingRight = false;

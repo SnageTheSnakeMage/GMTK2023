@@ -11,6 +11,7 @@ public class heroActions : MonoBehaviour
     public bool grounded = true;
     public bool facingRight = true;
     public float lookDownBy = 5f;
+    public Animator anim;
 
 
     //used for death method
@@ -68,6 +69,9 @@ public class heroActions : MonoBehaviour
         {
             jump();
         }
+
+        //jump anime check
+        anim.SetBool("grounded?", grounded);
     }
 
     //Checks what object the hero hits when he collides with something
