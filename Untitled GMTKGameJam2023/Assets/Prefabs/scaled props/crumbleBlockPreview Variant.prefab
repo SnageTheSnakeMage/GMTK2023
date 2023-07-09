@@ -102,8 +102,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 1785180469256989654}
-  iD: id2
-  itemCntrl: {fileID: 0}
+  iD: 2
+  dragAndDropMgr: {fileID: 0}
 --- !u!114 &-1195110221539728395
 MonoBehaviour:
   m_ObjectHideFlags: 0

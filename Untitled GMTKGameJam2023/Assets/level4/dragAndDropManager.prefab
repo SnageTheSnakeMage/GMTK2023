@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4032911752938508229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4032911752938508235}
+  - component: {fileID: 4032911752938508228}
+  m_Layer: 0
+  m_Name: dragAndDropManager
+  m_TagString: dragAndDropManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4032911752938508235
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4032911752938508229}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.642093, y: -4.1071305, z: 144.80217}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4032911752938508228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4032911752938508229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6a89c4f59536be4080db8732f12b0b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allItems:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  itemPrefabs:
+  - {fileID: 3105932456304201938, guid: 036e4991096664c4582842e3a235d05a, type: 3}
+  - {fileID: 5152159979596958690, guid: 7cd18d509f016fb4a8066416a305afdd, type: 3}
+  - {fileID: 4664428406283979144, guid: 0b425b362deeef94bb6d22cf58019fc2, type: 3}
+  itemPreviewImage:
+  - {fileID: 462093165973433540, guid: 32f109747f2561a4ebcb0ebd410fedc9, type: 3}
+  - {fileID: 5852942721417261877, guid: b117700fba73fda4593445000c457b70, type: 3}
+  - {fileID: 95385008647483742, guid: ce4d1af533ec66843a9253968f6e9386, type: 3}
+  currentItemID: 0
+  placeable: 1

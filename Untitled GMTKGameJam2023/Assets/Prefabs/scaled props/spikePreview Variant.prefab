@@ -113,8 +113,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 5852942721417261879}
-  iD: id1
-  itemCntrl: {fileID: 0}
+  iD: 1
+  dragAndDropMgr: {fileID: 0}
 --- !u!212 &5852942721417261879 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 5152159979596958688, guid: 7cd18d509f016fb4a8066416a305afdd, type: 3}

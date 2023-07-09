@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d26a008450d4d7f47947c72bc5b10c3a
+guid: 910ba91ec8dccc44eb4c18d89a77c1df
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 2
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -113,29 +113,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: closedspring_0
+      name: crumble_block_0
       rect:
         serializedVersion: 2
         x: 881
-        y: 66
-        width: 1390
-        height: 1288
+        y: 103
+        width: 1373
+        height: 1200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9da488aa2a41747499bed00b2348021d
-      internalID: -610775224
+      spriteID: 5bf8f6ac89c473b4d9eeb66a34500a5d
+      internalID: 814990635
       vertices: []
       indices: 
       edges: []
@@ -160,7 +148,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      closedspring_0: -610775224
+      crumble_block_0: 814990635
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

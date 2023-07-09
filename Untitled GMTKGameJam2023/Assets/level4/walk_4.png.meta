@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d26a008450d4d7f47947c72bc5b10c3a
+guid: 260f44f8b8b616d4db0b98773b3da837
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 500
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -129,22 +129,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: closedspring_0
+      name: walk_4_0
       rect:
         serializedVersion: 2
-        x: 881
-        y: 66
-        width: 1390
-        height: 1288
+        x: 393
+        y: 98
+        width: 802
+        height: 1339
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9da488aa2a41747499bed00b2348021d
-      internalID: -610775224
+      spriteID: 714401c7af6cf13448ffe016eb7ff5aa
+      internalID: -352145285
       vertices: []
       indices: 
       edges: []
@@ -160,7 +160,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      closedspring_0: -610775224
+      walk_4_0: -352145285
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

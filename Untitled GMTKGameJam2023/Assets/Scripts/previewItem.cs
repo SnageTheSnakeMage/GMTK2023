@@ -5,7 +5,7 @@ using UnityEngine;
 public class previewItem : MonoBehaviour
 {
     public SpriteRenderer sprite;
-    public string iD;
+    public int iD;
     public dragAndDropManager dragAndDropMgr;
 
     public void Start()
@@ -14,6 +14,10 @@ public class previewItem : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        if(dragAndDropMgr.currentItemID != iD)
+        {
+            Destroy(gameObject);
+        }
         if(Physics2D.OverlapBox(this.transform.position, new Vector2(.9f,0.9f), 0))
         {
             sprite.color = new Color(1, 0, 0, 0.3529412f);
