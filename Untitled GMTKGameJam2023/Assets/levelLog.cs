@@ -5,10 +5,19 @@ using UnityEngine;
 public class levelLog : MonoBehaviour
 {
     public bool[] completedLevels;
+    public static levelLog instance;
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(gameObject);
+        if (instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
     }
 
     public void CompletedLevel(int level)
