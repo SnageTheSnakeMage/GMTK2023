@@ -71,7 +71,7 @@ public class heroActions : MonoBehaviour
         }
 
         //jump anime check
-        anim.SetBool("grounded?", grounded);
+
     }
 
     //Checks what object the hero hits when he collides with something
@@ -81,9 +81,11 @@ public class heroActions : MonoBehaviour
         {
             case "Ground":
                 grounded = true;
+                anim.SetBool("jumping?", false);
                 break;
             case "Danger":
                 frontHitbox.die();
+                anim.SetBool("jumping?", false);
                 break;
             
         }
@@ -91,6 +93,7 @@ public class heroActions : MonoBehaviour
 
     public void jump()
     {
+        anim.SetBool("jumping?", true);
         myRigidBody.velocity += new Vector2((myRigidBody.velocity.x/Mathf.Abs(myRigidBody.velocity.x)), jumpHeight);
         grounded = false;
     }
