@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static Pathfinding.RaycastModifier;
 
 
 public class dragAndDropManager : MonoBehaviour
@@ -20,17 +19,9 @@ public class dragAndDropManager : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0) && allItems[currentItemID].selected && placeable)
         {
+            allItems[currentItemID].selected = false;
             Instantiate(itemPrefabs[currentItemID], new Vector3(worldPosition.x, worldPosition.y),Quaternion.identity);
-            allItems[currentItemID].quantity--;
-            allItems[currentItemID].quantityText.text = allItems[currentItemID].quantity.ToString();
-
-            if (allItems[currentItemID].quantity <= 0)
-            {
-                allItems[currentItemID].selected = false;
-                Destroy(GameObject.FindGameObjectWithTag("Preview"));
-            }
-
-
+            Destroy(GameObject.FindGameObjectWithTag("Preview"));
         }
     }
 }
