@@ -3604,8 +3604,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17b055ef01febb343b0d931b2bb9f318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneChanger: {fileID: 0}
-  changer: {fileID: 0}
+  sceneChanger: {fileID: 1843864657}
+  changer: {fileID: 1843864658}
 --- !u!1 &2084915678
 GameObject:
   m_ObjectHideFlags: 0

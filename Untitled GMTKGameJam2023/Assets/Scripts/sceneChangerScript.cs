@@ -22,6 +22,14 @@ public class sceneChangerScript : MonoBehaviour
         SceneManager.LoadScene(newScene);
     }
 
+    //Call this whenever you want to load a new scene
+    //It will add the new scene to the sceneHistory list
+    public void LoadScene(int sceneIndex)
+    {
+        sceneHistory.Add(SceneManager.GetSceneByBuildIndex(sceneIndex).name);
+        SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(sceneIndex));
+    }
+
     //Call this whenever you want to load the previous scene
     //It will remove the current scene from the history and then load the new last scene in the history
     //It will return false if we have not moved between scenes enough to have stored a previous scene in the history
