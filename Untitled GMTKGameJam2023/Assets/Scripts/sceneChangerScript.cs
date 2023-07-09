@@ -18,6 +18,16 @@ public class sceneChangerScript : MonoBehaviour
     //It will add the new scene to the sceneHistory list
     public void LoadScene(string newScene)
     {
+        if (newScene == "Main Menu")
+        {
+            FindObjectOfType<AudioManager>().Stop("Main Theme");
+            FindObjectOfType<AudioManager>().Play("Main Menu");
+        }
+        else
+        {
+            FindObjectOfType<AudioManager>().Stop("Main Menu");
+            FindObjectOfType<AudioManager>().Play("Main Theme");
+        }
         sceneHistory.Add(newScene);
         SceneManager.LoadScene(newScene);
     }
