@@ -336,12 +336,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2340942743082839861}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+        m_TargetAssemblyTypeName: itemController, Assembly-CSharp
+        m_MethodName: BlockSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -361,5 +361,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iD: 0
   quantity: 0
-  quantityText: {fileID: 0}
+  quantityText: {fileID: 1187764966008361540}
   selected: 0
+  dragAndDropMgr: {fileID: 0}

@@ -8,16 +8,14 @@ public class frontHitboxScript : MonoBehaviour
     public heroActions heroActions;
     public BoxCollider2D frontHitbox;
 
-    // Start is called before the first frame update
+    //used for death method
+    public Transform respawnPosition;
+    
     void Start()
     {
+        respawnPosition = GameObject.FindGameObjectWithTag("Respawn").transform;
         heroActions = hero.GetComponent<heroActions>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        heroActions.sprite.flipX = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -28,7 +26,7 @@ public class frontHitboxScript : MonoBehaviour
                 turnAround();
                 break;
             case "Danger":
-                heroActions.die();
+                die();
                 break;
         }
     }
@@ -39,12 +37,43 @@ public class frontHitboxScript : MonoBehaviour
         if (heroActions.facingRight)
         {
             heroActions.facingRight = false;
-            frontHitbox.offset = new Vector2(-0.68f,0);
+            frontHitbox.offset = new Vector2(-1.1f,0);
+            heroActions.sprite.flipX = false;
         }
         else
         {
             heroActions.facingRight = true;
             frontHitbox.offset = new Vector2(0.68f, 0);
+            heroActions.sprite.flipX = true;
         }
     }
+    //moved die method here to access turnAround
+    public void die()
+    {
+        int voicelineNumber = Random.Range(1, 6);
+        if (!heroActions.facingRight)
+        {
+            turnAround();
+        }
+        switch(voicelineNumber){
+            case 1:
+                FindObjectOfType<AudioManager>().Play("fail" + voicelineNumber.ToString());
+                break;
+            case 2:
+                FindObjectOfType<AudioManager>().Play("fail" + voicelineNumber.ToString());
+                break;
+            case 3:
+                FindObjectOfType<AudioManager>().Play("fail" + voicelineNumber.ToString());
+                break;
+            case 4:
+                FindObjectOfType<AudioManager>().Play("fail" + voicelineNumber.ToString());
+                break;
+            case 5:
+                FindObjectOfType<AudioManager>().Play("fail" + voicelineNumber.ToString());
+                break;
+        }
+        hero.transform.position = respawnPosition.position;
+           
+    }
+
 }
