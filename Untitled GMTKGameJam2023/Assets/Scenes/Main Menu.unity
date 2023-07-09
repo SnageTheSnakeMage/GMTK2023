@@ -3852,7 +3852,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2084915681}
-  - component: {fileID: 2084915680}
   - component: {fileID: 2084915679}
   m_Layer: 0
   m_Name: Audio Manager
@@ -3992,18 +3991,15 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
---- !u!114 &2084915680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2084915678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e827432fcbeb9a47877efa87055f2be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  - name: Main Menu
+    clip: {fileID: 8300000, guid: 79a4b416d7b592e45befa82e07c9cedc, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
 --- !u!4 &2084915681
 Transform:
   m_ObjectHideFlags: 0

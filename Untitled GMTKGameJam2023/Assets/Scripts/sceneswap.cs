@@ -7,6 +7,16 @@ public class sceneswap : MonoBehaviour
 {
     public void Sceneswap(string sceneName)
     {
+        if(sceneName == "Main Menu")
+        {
+            FindObjectOfType<AudioManager>().Stop("Main Theme");
+            FindObjectOfType<AudioManager>().Play("Main Menu");
+        }
+        else
+        {
+            FindObjectOfType<AudioManager>().Stop("Main Menu");
+            FindObjectOfType<AudioManager>().Play("Main Theme");
+        }
         SceneManager.LoadScene(sceneName);
     }
 }
