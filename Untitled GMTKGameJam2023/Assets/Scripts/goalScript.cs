@@ -11,7 +11,6 @@ public class goalScript : MonoBehaviour
         voicelineNumber = Random.Range(1, 5);
         if (collision.gameObject.tag == "Player")
         {
-            FindObjectOfType<AudioManager>().Stop("Main Theme");
             Time.timeScale = 0;
             goalScreen.SetActive(true);
             switch(voicelineNumber)
